@@ -1,0 +1,30 @@
+STARTHEAD
+{
+    PURNO_NUMBER _a,_b/
+    FRACTION_NUMBER _c=10.0/
+    PURFRAC_NUM _d1 , _d2 , _d3 , _d4 , _d5 , _d6/
+    _a=10/
+    _b=5/
+     
+    _d1=_a PLUS _b/
+    _d2=_a MINUS _b/
+    _d3=_a MULTI _b/
+    _d4=_a DIVI _b/
+    _d5=_a POWER _b/
+    _d6=_a MOD _b/
+
+     LETTERS _s/
+
+     IF (_d1 GT _d2)
+       OUT(2)/
+     ELSE
+       OUT(1)/
+
+     /* THIS IS A SAMPLE CODE
+     <
+     MULTILINE COMMENT
+     >
+
+
+}
+ENDHEAD
