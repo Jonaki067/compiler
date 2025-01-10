@@ -1,30 +1,80 @@
-STARTHEAD
-{
-    PURNO_NUMBER _a,_b/
-    FRACTION_NUMBER _c=10.0/
-    PURFRAC_NUM _d1 , _d2 , _d3 , _d4 , _d5 , _d6/
-    _a=10/
-    _b=5/
-     
-    _d1=_a PLUS _b/
-    _d2=_a MINUS _b/
-    _d3=_a MULTI _b/
-    _d4=_a DIVI _b/
-    _d5=_a POWER _b/
-    _d6=_a MOD _b/
-
-     LETTERS _s/
-
-     IF (_d1 GT _d2)
-       OUT(2)/
-     ELSE
-       OUT(1)/
-
-     /* THIS IS A SAMPLE CODE
-     <
-     MULTILINE COMMENT
-     >
+<
+This is a basic lex and parser design for a compiler
+>
 
 
-}
-ENDHEAD
+/* Variable declaration portion
+
+PURFRAC_NUM _a  , _b ; eol
+PURFRAC_NUM _c ; eol
+
+
+/*expression execution portion
+_a = 12 + 3 eol
+12 + 3 eol
+_c = 12 * 3 + 2 eol
+_c = 12 / 3 eol
+_a = 12 / 0 eol
+
+_c = 12 % 3 eol
+
+_c = 12 % 0 eol
+/* If-else and nested if-else statement execution portion
+
+IF ( _a = 12 + 1 ) { _a = 12 } eol
+
+IF (  12 + 1 )  { _a = 13 } eol
+
+IF ( _a = 12 + 1 )
+   { _b = 22 - 1   }
+ ELSE 
+   { _b = 22 + 1 } eol
+
+
+IF ( _a = 12 + 1 ) 
+    { 
+    IF ( _a = 12 + 1 )  { _b = 23 + 1   } 
+    ELSE { _b = 22 + 1 }  
+    } 
+ELSE { _b = 22 + 1 } eol
+
+/*IF-ELSE with more than one expression
+IF ( _a = 12 + 1 ) 
+    { 
+    IF ( _a = 12 + 1 ) 
+     { _b = 23 + 1 ,
+      _a = 12    } 
+    ELSE { _b = 22 + 1 }  
+    } 
+ELSE { _b = 22 + 1 } eol
+
+/* LOOP 
+LOOP ( _a  =  1 ; _a < 10 ; _a = _a + 1  ) {
+    IF ( _a = 12 + 1 ) 
+    { 
+    IF ( _a = 12 + 1 ) 
+     { _b = 23 + 1 ,
+      _a = 12    } 
+    ELSE { _b = 22 + 1 }  
+    } 
+    ELSE { _b = 22 + 1 }  
+} eol
+
+
+LOOP ( _a  =  1 ; _a < 10 ; _a = _a + 1  ) {
+    _a = 12 * 36 * 12 
+} eol
+
+
+/* FUNCTION
+PURFRAC_NUM FUNCTION Sum {
+  LOOP ( _a  =  1 ; _a < 10 ; _a = _a + 8  ) {
+    _a = 12 * 36 * 12 
+}  
+} RETURN eol
+
+PURFRAC_NUM FUNCTION If {
+  _a = 12 + 1
+} RETURN eol
+
+PURFRAC_NUM _abc ; eol

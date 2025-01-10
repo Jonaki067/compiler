@@ -1,0 +1,149 @@
+Multi_Line_Comment
+Single_Line_Comment
+
+Valid declaration
+LINE_COMPLEMENT
+
+Valid declaration
+LINE_COMPLEMENT
+Single_Line_Comment
+PLUS
+_a=15
+LINE_COMPLEMENT
+PLUS
+The value of the expression is :15
+LINE_COMPLEMENT
+PLUS
+_c=38
+LINE_COMPLEMENT
+_c=4
+LINE_COMPLEMENT
+Invalid as denominator is zero. By default 0 will be returned.
+_a=0
+LINE_COMPLEMENT
+_c=0
+LINE_COMPLEMENT
+Invalid as denominator is zero.SO Modulas is not possible
+_c=0
+LINE_COMPLEMENT
+Single_Line_Comment
+PLUS
+_a=13
+_a=12
+
+if executed
+LINE_COMPLEMENT
+PLUS
+The value of the expression is :13
+_a=13
+
+if executed
+LINE_COMPLEMENT
+PLUS
+_a=13
+_b=21
+PLUS
+_b=23
+
+if else executed
+LINE_COMPLEMENT
+PLUS
+_a=13
+PLUS
+_a=13
+PLUS
+_b=24
+PLUS
+_b=23
+
+if else executed
+PLUS
+_b=23
+
+Nested if else executed
+LINE_COMPLEMENT
+Single_Line_Comment
+PLUS
+_a=13
+PLUS
+_a=13
+PLUS
+_b=24
+_a=12
+PLUS
+_b=23
+
+if else executed
+PLUS
+_b=23
+
+Nested if else executed
+LINE_COMPLEMENT
+Single_Line_Comment
+PLUS
+_a=13
+PLUS
+_a=13
+PLUS
+_b=24
+_a=12
+PLUS
+_b=23
+
+if else executed
+PLUS
+_b=23
+
+Nested if else executed
+IF STATEMENT INSIDE THE LOOP
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+Finally , 9 times the loop run
+LINE_COMPLEMENT
+_a=5184
+EXPRESSION INSIDE THE LOOP
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing 
+ The loop is runing
+ The loop is runing
+ The loop is runing
+ The loop is runing
+Finally , 9 times the loop run
+LINE_COMPLEMENT
+Single_Line_Comment
+_a=5184
+EXPRESSION INSIDE THE LOOP
+ The loop is runing
+ The loop is runing
+Finally , 2 times the loop run
+FUNCTION DEFINED SUCCESSFULLY . LOOP INSIDE THE FUNCTION
+LINE_COMPLEMENT
+PLUS
+_a=13
+FUNCTION DEFINED SUCCESSFULLY . EXPRESSION INSIDE THE FUNCTION
+LINE_COMPLEMENT
+
+Valid declaration
+LINE_COMPLEMENT
+All Variables with there value
+_a=13
+_b=23
+_c=0
+
+Total number of identifier is 4
+Total number of single line comment is 6
+Total number of multi line comment is 4
+Total number of statement is 19
+Total number of function declared is 2
+Total number of if_else statement is 9
+Total number of loop statement is 3
